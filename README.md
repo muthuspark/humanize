@@ -6,17 +6,10 @@ It adds the `humanizer` skill, adapted from [`blader/humanizer`](https://github.
 
 ## Install in Codex
 
-Clone the repo:
+Add the GitHub repo as a Codex marketplace:
 
 ```bash
-git clone https://github.com/muthuspark/humanize.git
-cd humanize
-```
-
-Register the local marketplace:
-
-```bash
-codex plugin marketplace add "$(pwd)/.agents/plugins"
+codex plugin marketplace add muthuspark/humanize
 ```
 
 Install the plugin:
@@ -26,6 +19,30 @@ codex plugin add humanize@humanize
 ```
 
 Start a new Codex thread after installing so Codex picks up the new skill.
+
+## Local development install
+
+Use this path only if you want to edit the plugin locally.
+
+```bash
+git clone https://github.com/muthuspark/humanize.git
+cd humanize
+codex plugin marketplace add "$(pwd)/.agents/plugins"
+codex plugin add humanize@humanize
+```
+
+After changing the plugin, refresh the marketplace or restart Codex before testing in a new thread.
+
+## Sparse install
+
+If you want Codex to fetch only the marketplace and plugin package from the repo:
+
+```bash
+codex plugin marketplace add muthuspark/humanize \
+  --sparse .agents/plugins \
+  --sparse plugins/humanize
+codex plugin add humanize@humanize
+```
 
 ## Use
 
