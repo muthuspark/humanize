@@ -46,7 +46,17 @@ codex plugin add humanize@humanize
 
 ## Use
 
-Ask Codex to humanize text:
+In Codex CLI, mention the bundled skill with `$humanizer`:
+
+```text
+$humanizer Humanize this text without changing its meaning:
+
+<paste text here>
+```
+
+You can also browse/select it with `/skills`, or let Codex invoke it implicitly when your request matches the skill description.
+
+Ask Codex naturally:
 
 ```text
 Humanize this text without changing its meaning:
