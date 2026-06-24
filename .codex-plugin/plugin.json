@@ -1,0 +1,35 @@
+{
+  "name": "humanize",
+  "version": "0.1.0",
+  "description": "Humanize text by removing common AI writing tells while preserving meaning and voice.",
+  "author": {
+    "name": "Local developer"
+  },
+  "homepage": "https://github.com/blader/humanizer",
+  "repository": "https://github.com/blader/humanizer",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "editing",
+    "humanize",
+    "style"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Humanizer",
+    "shortDescription": "Rewrite AI-sounding text into natural prose.",
+    "longDescription": "Humanizer adds a Codex skill for rewriting AI-sounding text. It scans for common tells such as inflated significance, promotional language, vague attribution, rule-of-three padding, em dashes, generic conclusions, excessive hedging, and chatbot artifacts, then rewrites the text while preserving meaning, paragraph coverage, and the requested voice.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Edit"
+    ],
+    "defaultPrompt": [
+      "Humanize this text without changing its meaning.",
+      "Rewrite this in my voice and remove AI tells.",
+      "Make this sound natural and keep the same structure."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
